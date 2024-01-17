@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 
-export const Task3Screen = () => {
+export const Task5Screen = () => {
     return (
         <View style={styles.container}>
             <View style={styles.purpleBox} />
@@ -14,31 +14,26 @@ export const Task3Screen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: 'column',
+        flexDirection: 'row',
         backgroundColor: '#28425B',
-        justifyContent: 'center',
+        justifyContent: 'space-between'
     },
     purpleBox: {
         width: 100,
-        height: 100,
         backgroundColor: '#5856D6',
         borderWidth: 10,
         borderColor: 'white',
-        alignSelf: 'flex-end',
     },
     orangeBox: {
         width: 100,
-        height: 100,
         backgroundColor: '#F0A23B',
         borderWidth: 10,
         borderColor: 'white',
     },
     blueBox: {
         width: 100,
-        height: 100,
         backgroundColor: '#28C4D9',
         borderWidth: 10,
         borderColor: 'white',
-        alignSelf: 'center',
     },
 });
