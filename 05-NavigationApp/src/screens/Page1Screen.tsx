@@ -1,12 +1,13 @@
-import { StackScreenProps } from '@react-navigation/stack'
 import React from 'react'
+import Icon from 'react-native-vector-icons/Ionicons'
 import { Button, Text, TouchableOpacity, View } from 'react-native'
 import { styles } from '../theme/appTheme'
+import { DrawerScreenProps } from '@react-navigation/drawer'
 
-interface Props extends StackScreenProps<any, any> {
-}
+interface Props extends DrawerScreenProps<any, any> { }
 
 export const Page1Screen = ({ navigation }: Props) => {
+
     return (
         <View style={styles.globalMargin}>
             <Text style={styles.title}>Page 1 Screen</Text>
@@ -29,7 +30,10 @@ export const Page1Screen = ({ navigation }: Props) => {
                         name: 'Pedro'
                     })}
                 >
-                    <Text style={styles.bigButtonText}>Pedro</Text>
+                    <View style={styles.centerContent}>
+                        <Icon name="person-circle-outline" size={25} color="white" />
+                        <Text style={styles.bigButtonText}> Pedro</Text>
+                    </View>
                 </TouchableOpacity>
 
                 <TouchableOpacity
@@ -42,7 +46,10 @@ export const Page1Screen = ({ navigation }: Props) => {
                         name: 'Maria'
                     })}
                 >
-                    <Text style={styles.bigButtonText}>Maria</Text>
+                    <View style={styles.centerContent}>
+                        <Icon name='person-outline' size={25} color="white" />
+                        <Text style={styles.bigButtonText}> Maria</Text>
+                    </View>
                 </TouchableOpacity>
             </View>
         </View>
