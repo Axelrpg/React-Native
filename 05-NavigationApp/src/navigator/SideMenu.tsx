@@ -20,7 +20,7 @@ export const SideMenu = () => {
                         style={{ marginLeft: 10 }}
                         onPress={() => props.navigation.toggleDrawer()}
                     >
-                        <Icon name="globe-outline" size={30} color={'black'} />
+                        <Icon name="menu-outline" size={30} color='black' />
                     </TouchableOpacity>
                 )
             })}

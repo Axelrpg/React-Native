@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { Button, Text, TouchableOpacity, View } from 'react-native'
 import { styles } from '../theme/appTheme'
@@ -31,7 +31,7 @@ export const Page1Screen = ({ navigation }: Props) => {
                     })}
                 >
                     <View style={styles.centerContent}>
-                        <Icon name="person-circle-outline" size={25} color="white" />
+                        <Icon name="man-outline" size={25} color="white" />
                         <Text style={styles.bigButtonText}> Pedro</Text>
                     </View>
                 </TouchableOpacity>
@@ -47,7 +47,7 @@ export const Page1Screen = ({ navigation }: Props) => {
                     })}
                 >
                     <View style={styles.centerContent}>
-                        <Icon name='person-outline' size={25} color="white" />
+                        <Icon name="woman-outline" size={25} color="white" />
                         <Text style={styles.bigButtonText}> Maria</Text>
                     </View>
                 </TouchableOpacity>
